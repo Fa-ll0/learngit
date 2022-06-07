@@ -2,6 +2,7 @@
 - esc nomal
 - i insert
 - v visual
+- r 替换
 2. 上下左右kjhl
 3. 转移光标位置（这些可以多次用转到别的词）
  - w 下个词头
@@ -18,9 +19,10 @@
 12. o或O 新一行
 13. x或X 删除
 14. e esc中替换
-15. d 整体剪切，用p粘贴；dw删一个词 d2e删两个词
+15. d 剪切到词的结尾，用p粘贴；dw删一个词，d2e删两个词，w带空格，e不带
 16. . 重复上一个命令
 17. visual模式 e选择，标出范围，d删除
 18. :w保存,:q退出,:q!退出不保存
 19. u undo,ctrl+R redo
 20. :help
+建议设置 inoremap jj <Esc>
