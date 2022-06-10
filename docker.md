@@ -34,10 +34,10 @@ docker run -d -p 2154:5000 training/webapp python app.py
 3. 
 - 网络端口映射：容器的 -p 可以同时绑主机的ip和port,默认绑tcp端口，但可改 如：127.0.0.1:2001:5000/udp
 - 连接容器：
- - 容器命名
- - 新建网络 docker network create -d bridge test-net(-d 确定docker网络类型，overlay用于swarm mode)
- - 加入网络 运行容器时添加 --network test-net(可用ping检验，多容器连接可用dockercompose)
- 4.宿主机的daemon.json可以配置全部容器的dns，没什么用略了
+  - 容器命名
+  - 新建网络 docker network create -d bridge test-net(-d 确定docker网络类型，overlay用于swarm mode)
+  - 加入网络 运行容器时添加 --network test-net(可用ping检验，多容器连接可用dockercompose)
+4.宿主机的daemon.json可以配置全部容器的dns，没什么用略了
 ## 镜像
 1. 列出本机镜像 docker images(不指定镜像版本标签，默认下载最新版。ubuntu:16.04)
 2. 查找镜像 docker search imagename
