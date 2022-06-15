@@ -2,6 +2,7 @@
 ctrl+alt+delete 安全选项
 ctrl+shift+esc   任务管理器
 ctrl+a        全选
+alt+f4    关闭当前页面或关机
 win+tab   管理虚拟桌面
 win+a       打开操作中心
 win+r        运行
