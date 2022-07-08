@@ -64,3 +64,24 @@ str.compare(5,4/*相对str*/,"apple",3,2/*相对apple*/)
  std::stringstream strb;
  strb<<"hello";
  std::string stra=strb.str();
+
+ 默认实参
+
+不定量参数#include<cstdarg>
+传参：int count,...
+va_list(char*) arg
+va_start(arg,count)
+va_arg(arg,int)(迭代的)
+va_end(arg)(释放)
+
+main(int argc,char* argv[])
+argc    参数个数(从路径开始，不包括空指针)
+argv[0] 程序路径及文件名
+argv[1] 参数。。。
+nullptr
+
+右值（不可写）:创建右值引用&&可以减少一次内存分配（就是代替了表达式）
+
+typedef char (*p)(int,int);
+using p=char (*)(int,int);(函数指针类型名为p) 
+
